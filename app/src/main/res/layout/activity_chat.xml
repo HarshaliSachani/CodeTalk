@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main">
+
+        <ImageView
+            android:id="@+id/imgUserProfile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:contentDescription="@string/contDesc"
+            android:src="@drawable/group_1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:fontFamily="@font/sf_pro_rounded_heavy"
+            android:letterSpacing="0.05"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/imgUserProfile"
+            app:layout_constraintEnd_toStartOf="@id/btnMore"
+            app:layout_constraintStart_toEndOf="@id/imgUserProfile"
+            app:layout_constraintTop_toTopOf="@id/imgUserProfile"
+            tools:text="Group Name" />
+
+        <ImageView
+            android:id="@+id/btnMore"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:contentDescription="@string/contDesc"
+            android:src="@drawable/ic_round_more_vert_24"
+            app:layout_constraintBottom_toBottomOf="@id/imgUserProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imgUserProfile" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerChatMsg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:overScrollMode="never"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/edtMsg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgUserProfile"
+            tools:listitem="@layout/list_item_chat_left" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtMsg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/bg_square"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:hint="@string/type_a_message"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:textColor="@color/grey_dark"
+            android:textColorHint="@color/grey"
+            android:textCursorDrawable="@drawable/cursor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnSendMsg"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnSendMsg"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:contentDescription="@string/contDesc"
+            android:padding="@dimen/_5sdp"
+            android:rotation="90"
+            android:src="@drawable/ic_send"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/edtMsg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edtMsg"
+            app:layout_constraintTop_toTopOf="@id/edtMsg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

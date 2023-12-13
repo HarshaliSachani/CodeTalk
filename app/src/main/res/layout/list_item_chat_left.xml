@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayoutChatLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_40sdp">
+
+        <View
+            android:id="@+id/viewMsgBg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/bg_group_chat_left"
+            app:layout_constraintBottom_toBottomOf="@id/layoutLeftMessage"
+            app:layout_constraintEnd_toEndOf="@id/layoutLeftMessage"
+            app:layout_constraintStart_toStartOf="@id/layoutLeftMessage"
+            app:layout_constraintTop_toTopOf="@id/layoutLeftMessage" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutLeftMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:minWidth="@dimen/_90sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/nameView"
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                app:layout_constraintBottom_toTopOf="@id/txtLeftMsg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_rounded_bold"
+                android:gravity="start"
+                android:letterSpacing="0.03"
+                android:textColor="@color/color_757575"
+                android:textSize="11sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="harshali" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtLeftMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/sf_pro_rounded_semibold"
+                android:gravity="start"
+                android:letterSpacing="0.03"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameView"
+                tools:text="hello everyone!  how are you  how are you" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMsgTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:fontFamily="@font/sf_pro_rounded_medium"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/layoutLeftMessage"
+            app:layout_constraintEnd_toEndOf="@id/layoutLeftMessage"
+            tools:text="2:29 pm" />
+
+        <View
+            android:id="@+id/imgProfileView"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_7sdp"
+            app:layout_constraintBottom_toBottomOf="@id/viewMsgBg"
+            app:layout_constraintEnd_toEndOf="@id/viewMsgBg"
+            app:layout_constraintStart_toEndOf="@id/viewMsgBg"
+            app:layout_constraintTop_toBottomOf="@id/viewMsgBg" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:contentDescription="@string/contDesc"
+            android:src="@drawable/bg_group_card"
+            app:layout_constraintBottom_toBottomOf="@id/imgProfileView"
+            app:layout_constraintEnd_toEndOf="@id/imgProfileView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

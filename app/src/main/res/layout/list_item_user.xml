@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/groupCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:background="@drawable/bg_group_card">
+
+
+        <ImageView
+            android:id="@+id/imgGroupUserProfile"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:contentDescription="@string/contDesc"
+            android:src="@drawable/profile_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtGroupUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/sf_pro_rounded_heavy"
+            android:letterSpacing="0.05"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/imgGroupUserProfile"
+            app:layout_constraintEnd_toStartOf="@id/imgDeleteUser"
+            app:layout_constraintStart_toEndOf="@id/imgGroupUserProfile"
+            app:layout_constraintTop_toTopOf="@id/imgGroupUserProfile"
+            tools:text="Harshali Sachani" />
+
+        <ImageView
+            android:id="@+id/imgDeleteUser"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintBottom_toBottomOf="@id/groupCardLayout"
+            app:layout_constraintEnd_toEndOf="@id/groupCardLayout"
+            app:layout_constraintTop_toTopOf="@id/groupCardLayout"
+            android:contentDescription="@string/contDesc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/groupCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/bg_group_card">
+
+
+        <ImageView
+            android:id="@+id/imgGroupProfile"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:contentDescription="@string/contDesc"
+            android:src="@drawable/group_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtGroupName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_rounded_heavy"
+            android:letterSpacing="0.05"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:maxLines="1"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/imgGroupProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toEndOf="@id/imgGroupProfile"
+            app:layout_constraintTop_toTopOf="@id/imgGroupProfile"
+            tools:text="Group Name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
