@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">CodeTalk</string>
+    <string name="username">user name</string>
+    <string name="group_name">enter group name</string>
+    <string name="email_id">email id</string>
+    <string name="password">password</string>
+    <string name="new_password">new password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="login">LOGIN</string>
+    <string name="update">UPDATE</string>
+    <string name="next">NEXT</string>
+    <string name="get_otp">GET OTP</string>
+    <string name="verify">VERIFY</string>
+    <string name="get_started">Get Started →</string>
+    <string name="login_as_admin">Login as Admin</string>
+    <string name="welcome">Welcome</string>
+    <string name="your_colleague_waiting">Your colleagues waiting</string>
+    <string name="contDesc">contentDescription</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="create_new_group">Create group</string>
+    <string name="create">Create</string>
+    <string name="select_group_icon">Select group icon</string>
+    <string name="select_user_for_remove">Select user for remove</string>
+    <string name="add_user">Add User</string>
+    <string name="remove_user">Remove User</string>
+    <string name="delete_group">Delete Group</string>
+    <string name="clear_history">Clear History</string>
+
+
+    <string name="alert">Alert</string>
+    <string name="logout">Logout</string>
+    <string name="would_you_like_to_logout">Would you like to logout?</string>
+    <string name="success">Success</string>
+    <string name="enter_group_name_msg">Please enter group name.</string>
+    <string name="select_group_icon_msg">Please select group icon.</string>
+    <string name="enter_user_email_id">Please enter user email id.</string>
+    <string name="enter_user_name">Please enter user name.</string>
+    <string name="enter_password">Please enter password.</string>
+    <string name="enter_confirm_password">Please enter confirm password.</string>
+    <string name="password_confirm_password_not_match">Password and confirm password didn\'t match.</string>
+    <string name="enter_otp">Please enter OTP.</string>
+    <string name="enter_valid_otp">Please enter valid OTP.</string>
+    <string name="no_user_found">No user found!</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="clear_this_chat">Clear this chat?</string>
+    <string name="are_you_sure_to_remove_user">User will no longer be able to send messages in this group.</string>
+    <string name="are_you_sure_to_delete_group">This will permanently delete.\nYou can’t restore it</string>
+    <string name="are_you_sure_to_clear_history">This will permanently clear your chat history.\nYou can’t restore it</string>
+    <string name="remove_user_msg">User will no longer be able to send messages in this group.</string>
+
+</resources>
